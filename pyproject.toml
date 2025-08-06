@@ -12,4 +12,5 @@ dependencies = [
     "google-genai>=1.28.0",
     "lyricsgenius>=3.6.5",
     "embedding-atlas>=0.8.0",
+    "black>=25.1.0",
 ]
