@@ -7,8 +7,9 @@ requires-python = "==3.10.12"
 dependencies = [
     "pandas<3.0.0,>=2.2.2",
     "ipykernel<7.0.0,>=6.29.5",
-    "pyarrow<18.0.0,>=17.0.0",
+    "pyarrow>=17.0.0",
     "fastparquet<2025.0.0,>=2024.5.0",
     "google-genai>=1.28.0",
     "lyricsgenius>=3.6.5",
+    "embedding-atlas>=0.8.0",
 ]
