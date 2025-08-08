@@ -203,3 +203,6 @@ __marimo__/
 .streamlit/secrets.toml
 cred.py
 .DS_STORE
+*.parquet
+*.pkl
+*.npy
