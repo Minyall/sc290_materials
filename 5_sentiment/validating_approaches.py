@@ -19,12 +19,6 @@ if not path.exists():
     vader_guesses = []
     for item in corpus:
         scores = analyzer.polarity_scores(item)
-        # if scores['compound'] > 0.4:
-        #     classification = 'Positive'
-        # elif scores['compound'] < -0.4:
-        #     classification = 'Negative'
-        # else:
-        #     classification = 'Neutral'
         vader_guesses.append(scores['compound'])
 
     sample['vader'] = vader_guesses
