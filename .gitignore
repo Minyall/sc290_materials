@@ -210,3 +210,4 @@ cred.py
 *.csv
 *.html
 NOTES.md
+*/_*
