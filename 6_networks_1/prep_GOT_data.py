@@ -62,3 +62,5 @@ edges = nx.to_pandas_edgelist(G)
 
 edges.to_csv(export_edge_path)
 nodes.to_csv(export_node_path)
+
+nx.write_gexf(G,'GOT_graph.gexf')
