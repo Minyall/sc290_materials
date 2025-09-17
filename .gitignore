@@ -211,3 +211,4 @@ cred.py
 *.html
 NOTES.md
 */_*
+*.gexf
