@@ -1,3 +1,7 @@
+# https://www.kaggle.com/datasets/mathurinache/game-of-thrones-data/data
+
+
+
 import pandas as pd
 import networkx as nx
 from collections import Counter
@@ -16,6 +20,7 @@ char_groups = (
     .rename(columns={"name": "house", "characters": "name"})
     .drop_duplicates(subset=["name"])
 )
+char_groups['house'] = char_groups['house'].replace('Include','Uncategorised')
 
 char_list = char_groups["name"].tolist()
 
@@ -58,9 +63,11 @@ nodes = nodes.merge(
     right_index=True,
 )
 
+node_attr = nodes.set_index('name').to_dict(orient='index')
+nx.set_node_attributes(G, node_attr)
 edges = nx.to_pandas_edgelist(G)
 
-edges.to_csv(export_edge_path)
-nodes.to_csv(export_node_path)
+# edges.to_csv(export_edge_path)
+# nodes.to_csv(export_node_path)
 
 nx.write_gexf(G,'GOT_graph.gexf')
