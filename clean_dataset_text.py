@@ -8,7 +8,7 @@ def clean_guardian_text(text:str, remove_elements:tuple[str]=('span','aside')) -
     soup = BeautifulSoup(text, 'html.parser')
     [e.decompose() for e in soup.find_all() if e.name in remove_elements]
     paras = [p.text for p in soup.find_all('p', class_=None)]
-    cleaned_item ='\n'.join(paras)
+    cleaned_item ='\n'.join(paras).replace("’", "'")
     return cleaned_item
 
 def tokenise_doc(doc:spacy.tokens.Doc, stop_list:list[str] = None) -> str:
