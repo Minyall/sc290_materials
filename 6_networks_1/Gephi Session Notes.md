@@ -1,6 +1,6 @@
 # Gephi Session Notes
-
-
+> Open friends_main.gexf
+> Three finger double tap to activate zoom. Three finger double tap and drag to alter zoom amount.
 
 ## Interface overview
 
@@ -30,7 +30,7 @@ Force Atlas is similar, but runs constantly, nodes bouncing off one another and 
 
 ## Scaling Up
 
-> Switch to larger dataset
+> Switch to larger dataset friends.gexf
 
 - Note the number of nodes and edges
 - Scan through the nodes and edges tables
