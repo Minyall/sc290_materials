@@ -212,3 +212,4 @@ cred.py
 NOTES.md
 */_*
 *.gexf
+*.code-workspace
