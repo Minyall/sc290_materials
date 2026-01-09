@@ -1,4 +1,5 @@
 # Gephi Session Notes
+> Record Session myself
 > Open friends_main.gexf
 > Three finger double tap to activate zoom. Three finger double tap and drag to alter zoom amount.
 
