@@ -215,3 +215,5 @@ NOTES.md
 *.code-workspace
 coding_tasks/solutions/*
 insert_phrase.txt
+*.npy
+*.bin
