@@ -31,8 +31,3 @@ Betweeness centrality asks if a node wanted to reach every other node, which oth
 > You can calculate PageRank from the statistics panel.
 
 PageRank is like degree in that it ranks nodes by the number of connections it has. However it also then increases a node's score if it is connected to a highly connected node. We can think of it as influence. A person with only one connection may be low ranked, but if that one connection is to highest scoring person in the network, then their score will increase by association. What does it mean for a character to have a high PageRank in your network?
-
-
-
-
-
